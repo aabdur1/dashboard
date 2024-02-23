@@ -1,0 +1,84 @@
+body {
+  margin: auto;
+  display: grid;
+  height: 100dvh;
+  grid-template-columns: 25% 1fr;
+}
+
+.sidebar {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 5%;
+  font-size: larger;
+}
+
+.sidebar .link-container,
+.sidebar .other-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sidebar .link-container .home,
+.sidebar .link-container .profile,
+.sidebar .link-container .messages,
+.sidebar .link-container .history,
+.sidebar .link-container .tasks,
+.sidebar .link-container .communities,
+.sidebar .other-links .settings,
+.sidebar .other-links .support,
+.sidebar .other-links .privacy {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 5%;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 20%;
+  grid-template-rows: 20% 1fr 1fr;
+  gap: 1rem;
+}
+
+.header {
+  background-color: aqua;
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#search {
+  flex-grow: 1;
+}
+
+.main {
+  background-color: blueviolet;
+  grid-row: 2 / 4;
+  grid-column: span 2;
+}
+
+.announcements {
+  background-color: cadetblue;
+}
+
+.trending {
+  background-color: brown;
+}
