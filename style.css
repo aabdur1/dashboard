@@ -5,12 +5,15 @@ body {
   grid-template-columns: 15dvw 1fr;
   font-family: "indivisible", sans-serif;
   gap: 1rem;
+  background-color: rgb(225, 201, 255);
+  color: #ffffff;
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: rgb(170, 170, 248);
   display: flex;
   flex-direction: column;
+  justify-content: start;
   gap: 2rem;
   color: #ffffff;
   font-weight: 600;
@@ -22,6 +25,10 @@ body {
   justify-content: start;
   padding-left: 5%;
   font-size: larger;
+}
+
+.logo-pic {
+  width: 2rem;
 }
 
 .sidebar .link-container,
@@ -61,7 +68,8 @@ body {
 }
 
 .header {
-  background-color: aqua;
+  background-color: rgb(142, 142, 213);
+  color: #493962;
   grid-column: span 3;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -70,6 +78,7 @@ body {
   padding: 1rem;
   gap: 1rem;
   margin: 0;
+  border-radius: 0 0 0 10px;
 }
 
 .search {
@@ -86,6 +95,10 @@ body {
 #search {
   flex-grow: 1;
   height: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(225, 201, 255);
+  box-shadow: inset 0 2px 2px rgb(119, 92, 175);
 }
 
 .icons {
@@ -132,7 +145,7 @@ p.greeting-text {
 
 p.greeting-username {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .header-btns {
@@ -148,11 +161,13 @@ p.greeting-username {
   font-weight: 600;
   border: none;
   border-radius: 10px;
-  background-color: rgb(255, 170, 0);
+  background-color: rgb(119, 92, 175);
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .main {
-  background-color: blueviolet;
+  background-color: rgb(201, 201, 255);
   grid-row: 2 / 4;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -160,22 +175,28 @@ p.greeting-username {
   align-content: start;
   gap: 1rem;
   padding: 1rem;
+  border-radius: 10px 10px;
 }
 
 .main-header {
   grid-column: 1 / -1;
+  color: #493962;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: mediumspringgreen;
-  border-radius: 5px;
+  color: #ffffff;
+  background-color: rgb(119, 92, 175);
+  border-radius: 10px;
+  border-left: 0.5rem solid #493962;;
   padding: 1rem;
 }
 
 .announcements {
-  background-color: cadetblue;
+  background-color: rgb(156, 141, 187);
+  border-radius: 10px;
+  color: #493962;
   grid-column: 2;
   grid-row: 2;
   display: flex;
@@ -187,7 +208,7 @@ p.greeting-username {
 .announcements-card {
   display: flex;
   flex-direction: column;
-  background-color: chartreuse;
+  background-color: rgb(209, 182, 255);
   gap: 1rem;
   padding: 1rem;
   border-radius: 5px;
