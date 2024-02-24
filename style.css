@@ -4,6 +4,7 @@ body {
   height: 100dvh;
   grid-template-columns: 20dvw 1fr;
   font-family: "indivisible", sans-serif;
+  gap: 1rem;
 }
 
 .sidebar {
