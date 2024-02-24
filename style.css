@@ -95,8 +95,8 @@ body {
   grid-row: 2 / 4;
   grid-column: span 2;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  grid-template-rows: 5dvh 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: 5dvh;
   justify-content: start;
   align-content: start;
   gap: 1rem;
@@ -104,6 +104,12 @@ body {
 
 .main-header {
   grid-column: 1 / -1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: mediumspringgreen;
 }
 
 .announcements {
@@ -115,6 +121,7 @@ body {
 .announcements-card {
   display: flex;
   flex-direction: column;
+  background-color: chartreuse;
 }
 
 .trending {
@@ -130,4 +137,5 @@ body {
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr 1fr;
   column-gap: 1rem;
+  background-color: burlywood;
 }
