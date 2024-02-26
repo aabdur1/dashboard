@@ -83,7 +83,7 @@
       <h2 class="main-header">Your Projects</h2>
       <div class="card">
         <h2 class="card-header">Pablo's Picnic Predicament</h2>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleCardContent(this)">
           Amir decided to have a peaceful picnic in the backyard, but Pablo had other plans. As soon as Amir laid out the blanket, Pablo pounced onto it, sending sandwiches flying. Determined to salvage the picnic, Amir attempted to shoo Pablo away, only for Pablo to retaliate by batting at the fruit salad. The picnic turned into a hilarious battle of wits, with Amir ultimately surrendering the blanket to Pablo's reign of chaos.
         </div>
         <div class="card-icons">
@@ -94,7 +94,7 @@
       </div>
       <div class="card">
         <h2 class="card-header">Pablo's Parcel Prank</h2>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleCardContent(this)">
           Amir received a package in the mail and left it unattended for a moment. Sensing an opportunity for mischief, Pablo decided to investigate. With a swift paw, he tore into the box, only to find it filled with packing peanuts. Unfazed, Pablo proceeded to scatter the peanuts across the room, turning the living room into a winter wonderland of packaging material.        </div>
         <div class="card-icons">
           <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
@@ -104,7 +104,7 @@
       </div>
       <div class="card">
         <h2 class="card-header">Pablo's Piano Performance</h2>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleCardContent(this)">
           Amir decided to practice his piano skills one lazy Sunday afternoon. However, every time he hit a wrong note, Pablo would let out a dramatic meow, clearly unimpressed by his human's musical talents. Undeterred, Amir continued playing, turning the impromptu duet into a hilarious cacophony of keys and meows. It was a performance that would surely go down in the annals of feline history.        
         </div>
         <div class="card-icons">
@@ -115,7 +115,7 @@
       </div>
       <div class="card">
         <h2 class="card-header">Pablo's Party Planner Prowess</h2>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleCardContent(this)">
           Amir decided to host a dinner party for his friends, but he quickly realized he had a secret party planner in the form of Pablo. As soon as the guests arrived, Pablo took it upon himself to be the center of attention, weaving between legs and charming everyone with his antics. From stealing appetizers to commandeering laps, Pablo ensured that the evening was filled with laughter and chaos, leaving Amir to wonder if he should start charging admission for Pablo's entertainment services.        </div>
         <div class="card-icons">
             <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
@@ -125,7 +125,7 @@
       </div>
       <div class="card">
         <h2 class="card-header">Pablo's Pasta Party</h2>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleCardContent(this)">
           Amir attempted to cook a gourmet Italian meal, complete with handmade pasta. However, Pablo had different culinary aspirations. Intrigued by the aroma of fresh dough, Pablo leaped onto the kitchen counter and began batting at the strands of pasta, sending flour flying in every direction. What started as an elegant dinner preparation turned into a messy pasta party, with Pablo at the helm as the self-proclaimed pasta chef.        
         </div>
         <div class="card-icons">
@@ -136,7 +136,7 @@
       </div>
       <div class="card">
         <h2 class="card-header">Pablo's Photobomb Frenzy</h2>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleCardContent(this)">
           Amir decided to take some professional headshots for his LinkedIn profile. However, every time he set up the camera, Pablo would photobomb the shot with impeccable timing. Whether it was a playful swipe at the camera or a mischievous photobomb from behind a plant, Pablo made sure to leave his mark on every photo. In the end, Amir's professional headshots had an unexpected touch of feline flair, courtesy of Pablo's relentless photobombing antics.        
         </div>
         <div class="card-icons">
@@ -198,5 +198,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function toggleCardContent(element) {
+      element.classList.toggle('expanded')
+    }
+  </script>
 </body>
 </html>

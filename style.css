@@ -16,6 +16,7 @@ body {
   justify-content: start;
   gap: 2rem;
   font-weight: 600;
+  position: relative;
 }
 
 .logo {
@@ -24,8 +25,8 @@ body {
   font-size: 80%;
   color: #fed7aa;
   background-color: #f97316;
-  border-radius: 10px;
-  margin: 1rem;
+  border-radius: 0 0 10px 10px;
+  margin: 0 1rem 1rem;
   box-shadow: 
   0 1px 1px hsla(0, 0%, 0%, 0.075),
   0 2px 2px hsl(117deg 0% 0% / 0.075),
@@ -69,10 +70,21 @@ body {
   width: 2rem;
 }
 
+.logo,
+.link-container {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.other-links {
+  position: sticky;
+  top: 60%;
+}
+
 .content-wrapper {
   display: grid;
   grid-template-columns: 1fr 0.25fr;
-  grid-template-rows: 20dvh 1fr 1fr;
+  grid-template-rows: minmax(200px, 20dvh) 1fr 1fr;
 }
 
 .header {
@@ -83,6 +95,7 @@ body {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   padding: 1rem;
+  padding-right: 0;
   gap: 1rem;
   margin: 0;
   box-shadow: 
@@ -124,26 +137,56 @@ body {
 
 .icons {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   font-weight: 600;
+  gap: 1rem;
+}
+
+.icon-notification,
+.icon-name,
+.icon-profile-pic {
+  box-shadow: 
+  0 1px 1px hsla(0, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
+}
+
+.icon-notification:hover,
+.icon-name:hover,
+.icon-profile-pic:hover {
+  transform: translateY(4%);
+  cursor: pointer;
+  box-shadow: 
+  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 12px 12px hsl(117deg 0% 0% / 0.33)
+  ;
 }
 
 .icon-notification {
-  width: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f97316;
+  border-radius: 10px;
 }
 
 .icon-profile-pic {
-  width: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 10px;
 }
 
 .icon-name {
-  color: #ffedd5;
+  margin-left: auto;
+  margin-right: 0;
+  color: #fed7aa;
   font-size: 1.2rem;
   padding: 0.5rem;
-  background-color: #fb923c;
-  border-radius: 10px;
+  background-color: #f97316;
+  border-radius: 10px 0 0 10px;
 }
 
 .greeting {
@@ -178,6 +221,7 @@ p.greeting-username {
 .header-btns {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .header-btns-new,
@@ -250,6 +294,13 @@ button:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.card-content.expanded {
+  -webkit-line-clamp: none;
+  text-overflow: clip;
+  overflow: scroll;
 }
 
 .card-icons {
@@ -339,7 +390,6 @@ hr {
 .trending-header {
   margin: 0;
   margin-inline: 1rem;
-  margin-top: 2rem;
 }
 
 .trending-user {
