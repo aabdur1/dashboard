@@ -139,10 +139,10 @@ body {
 }
 
 .icon-name {
-  color: #c2410c;
+  color: #ffedd5;
   font-size: 1.2rem;
   padding: 0.5rem;
-  border: #c2410c 3px solid;
+  background-color: #fb923c;
   border-radius: 10px;
 }
 
