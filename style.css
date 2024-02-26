@@ -4,13 +4,12 @@ body {
   height: 100dvh;
   grid-template-columns: 15dvw 1fr;
   font-family: "indivisible", sans-serif;
-  gap: 1rem;
-  background-color: rgb(225, 201, 255);
-  color: #ffffff;
+  background-color: #d1fae5;
 }
 
 .sidebar {
-  background-color: rgb(170, 170, 248);
+  color: #bdf2d6;
+  background-color: #047857;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -19,12 +18,10 @@ body {
   font-weight: 600;
 }
 
-.sidebar .logo {
+.logo {
   display: flex;
-  align-items: center;
-  justify-content: start;
-  padding-left: 5%;
-  font-size: larger;
+  justify-content: center;
+  font-size: 80%;
 }
 
 .logo-pic {
@@ -68,7 +65,7 @@ body {
 }
 
 .header {
-  background-color: rgb(142, 142, 213);
+  background-color: #ecfdf5;
   color: #493962;
   grid-column: span 3;
   display: grid;
@@ -78,7 +75,13 @@ body {
   padding: 1rem;
   gap: 1rem;
   margin: 0;
-  border-radius: 0 0 0 10px;
+  box-shadow: 
+  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
 }
 
 .search {
@@ -97,8 +100,8 @@ body {
   height: 1.5rem;
   border: none;
   border-radius: 10px;
-  background-color: rgb(225, 201, 255);
-  box-shadow: inset 0 2px 2px rgb(119, 92, 175);
+  background-color: #d1fae5;
+  box-shadow: inset 0 2px 2px #047857;
 }
 
 .icons {
@@ -118,6 +121,8 @@ body {
 
 .icon-name {
   font-size: 1.2rem;
+  padding: 0.5rem;
+  background-color: #b090e3;
 }
 
 .greeting {
@@ -156,18 +161,17 @@ p.greeting-username {
 .header-btns-new,
 .header-btns-upload,
 .header-btns-share {
-  width: 5rem;
+  width: 7rem;
   height: 2rem;
   font-weight: 600;
   border: none;
   border-radius: 10px;
-  background-color: rgb(119, 92, 175);
+  background-color: #047857;;
   color: #ffffff;
   cursor: pointer;
 }
 
 .main {
-  background-color: rgb(201, 201, 255);
   grid-row: 2 / 4;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -180,21 +184,38 @@ p.greeting-username {
 
 .main-header {
   grid-column: 1 / -1;
+  margin: 0;
   color: #493962;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
-  background-color: rgb(119, 92, 175);
+  color: #022c22f;
+  background-color: #ecfdf5;
   border-radius: 10px;
-  border-left: 0.5rem solid #493962;;
+  border-left: 0.5rem solid #022c22;
   padding: 1rem;
 }
 
+.announcements-card-text1,
+.announcements-card-text2,
+.announcements-card-text3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+hr {
+  border: none;
+  border-top: #493962 1px solid;
+  width: 60%;
+  margin: 0.5rem auto;
+}
+
 .announcements {
-  background-color: rgb(156, 141, 187);
   border-radius: 10px;
   color: #493962;
   grid-column: 2;
@@ -202,16 +223,15 @@ p.greeting-username {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  padding: 1rem;
+  margin: 0;
 }
 
 .announcements-card {
   display: flex;
   flex-direction: column;
   background-color: rgb(209, 182, 255);
-  gap: 1rem;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .trending {
