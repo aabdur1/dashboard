@@ -65,7 +65,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 20%;
   grid-template-rows: 20dvh 1fr 1fr;
-  gap: 1rem;
 }
 
 .header {
@@ -197,6 +196,7 @@ p.greeting-username {
 .main-header {
   grid-column: 1 / -1;
   margin: 0;
+  margin-top: 1rem;
 }
 
 .card {
@@ -207,6 +207,13 @@ p.greeting-username {
   border-radius: 10px;
   border-left: 0.5rem solid #022c22;
   padding: 1rem;
+  box-shadow: 
+  0 1px 1px hsla(0, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
 }
 
 .card-icons {
@@ -231,12 +238,25 @@ p.greeting-username {
   margin: 0;
 }
 
+.announcements-header {
+  margin-top: 2rem;
+  margin-inline: 1rem;
+}
+
 .announcements-card {
   display: flex;
   flex-direction: column;
+  margin-inline: 1rem;
   background-color: #34d399;
   padding: 1rem;
   border-radius: 10px;
+  box-shadow: 
+  0 1px 1px hsla(0, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
 }
 
 .announcements-card-text1,
@@ -268,17 +288,27 @@ hr {
 
 .trending-header {
   margin: 0;
+  margin-inline: 1rem;
+  margin-top: 2rem;
 }
 
 .trending-user1,
 .trending-user2,
 .trending-user3 {
+  margin-inline: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   background-color: #6ee7b7;
   padding: 1rem;
   border-radius: 10px;
+  box-shadow: 
+  0 1px 1px hsla(0, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
 }
 
 .trending-user1-pic,
