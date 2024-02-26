@@ -368,7 +368,7 @@ button:hover {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: scroll;
   text-overflow: ellipsis;
 }
 
@@ -437,6 +437,6 @@ hr {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: scroll;
   text-overflow: ellipsis;
 }
