@@ -169,9 +169,10 @@ body {
 }
 
 .icon-notification {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #f97316;
+  padding: 0.5rem;
   border-radius: 10px;
 }
 
