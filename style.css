@@ -2,20 +2,19 @@ body {
   margin: auto;
   display: grid;
   height: 100dvh;
-  grid-template-columns: 15dvw 1fr;
+  grid-template-columns: 0.2fr 1fr;
   font-family: "indivisible", sans-serif;
-  background-color: #d1fae5;
-  color: #022c22;
+  background-color: #ffedd5;
+  color: #431407;
 }
 
 .sidebar {
-  color: #bdf2d6;
-  background-color: #047857;
+  color: #fed7aa;
+  background-color: #c2410c;
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 2rem;
-  color: #ffffff;
   font-weight: 600;
 }
 
@@ -23,9 +22,17 @@ body {
   display: flex;
   justify-content: center;
   font-size: 80%;
-  background-color: #10b981;
+  color: #fed7aa;
+  background-color: #f97316;
   border-radius: 10px;
   margin: 1rem;
+  box-shadow: 
+  0 1px 1px hsla(0, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
 }
 
 .logo-pic {
@@ -52,6 +59,7 @@ body {
 .privacy {
   display: flex;
   align-items: center;
+  font-size: 1.2rem;
   gap: 1rem;
   padding-left: 5%;
 }
@@ -63,12 +71,12 @@ body {
 
 .content-wrapper {
   display: grid;
-  grid-template-columns: 1fr 20%;
+  grid-template-columns: 1fr 0.25fr;
   grid-template-rows: 20dvh 1fr 1fr;
 }
 
 .header {
-  background-color: #6ee7b7;
+  background-color: #fdba74;
   grid-column: span 3;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -102,16 +110,16 @@ body {
   height: 1.5rem;
   border: none;
   border-radius: 10px;
-  background-color: #d1fae5;
-  box-shadow: inset 0 2px 2px #047857;
-  color: #047857;
+  background-color: #ffedd5;
+  box-shadow: inset 0 2px 2px #c2410c;
+  color: #c2410c;
   font-family: "indivisible", sans-serif;
   font-weight: 600;
   padding: 1rem;
 }
 
 #search:focus {
-  outline: #047857 2px solid;
+  outline: #c2410c 2px solid;
 }
 
 .icons {
@@ -127,12 +135,14 @@ body {
 
 .icon-profile-pic {
   width: 2rem;
+  border-radius: 10px;
 }
 
 .icon-name {
+  color: #c2410c;
   font-size: 1.2rem;
   padding: 0.5rem;
-  border: #059669 3px solid;
+  border: #c2410c 3px solid;
   border-radius: 10px;
 }
 
@@ -147,6 +157,7 @@ body {
 
 .greeting-profile-pic {
   width: 5rem;
+  border-radius: 50px;
 }
 
 .greeting-greeting {
@@ -175,11 +186,28 @@ p.greeting-username {
   width: 7rem;
   height: 2rem;
   font-weight: 600;
-  border: none;
+  border: 2px solid;
   border-radius: 10px;
-  background-color: #047857;;
-  color: #ffffff;
+  background-color: #fdba74;
+  color: #c2410c;
   cursor: pointer;
+  box-shadow: 
+  0 1px 1px hsla(0, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
+}
+
+button:hover {
+  transform: translateY(4%);
+  box-shadow: 
+  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 12px 12px hsl(117deg 0% 0% / 0.33)
+  ;
 }
 
 .main {
@@ -202,10 +230,10 @@ p.greeting-username {
 .card {
   display: flex;
   flex-direction: column;
-  color: #022c22;
-  background-color: #ecfdf5;
+  color: #431407;
+  background-color: #fff7ed;
   border-radius: 10px;
-  border-left: 0.5rem solid #022c22;
+  border-left: 0.5rem solid #431407;
   padding: 1rem;
   box-shadow: 
   0 1px 1px hsla(0, 0%, 0%, 0.075),
@@ -214,6 +242,14 @@ p.greeting-username {
   0 8px 8px hsl(117deg 0% 0% / 0.075),
   0 16px 16px hsl(117deg 0% 0% / 0.075)
   ;
+}
+
+.card-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-icons {
@@ -227,9 +263,23 @@ p.greeting-username {
   width: 1.5rem;
 }
 
+.main-img {
+  grid-column: 1 / -1;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 
+  0 1px 1px hsla(0, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
+}
+
 .announcements {
   border-radius: 10px;
-  color: #022c22;
+  color: #431407;
   grid-column: 2;
   grid-row: 2;
   display: flex;
@@ -247,7 +297,7 @@ p.greeting-username {
   display: flex;
   flex-direction: column;
   margin-inline: 1rem;
-  background-color: #34d399;
+  background-color: #f97316;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 
@@ -271,7 +321,7 @@ p.greeting-username {
 
 hr {
   border: none;
-  border-top: 1px solid #022c22;
+  border-top: 1px solid #431407;
   width: 60%;
   margin: 0.5rem auto;
 }
@@ -292,14 +342,13 @@ hr {
   margin-top: 2rem;
 }
 
-.trending-user1,
-.trending-user2,
-.trending-user3 {
+.trending-user {
   margin-inline: 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  background-color: #6ee7b7;
+  flex-grow: 1;
+  gap: 0.3rem;
+  background-color: #fb923c;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 
@@ -311,29 +360,31 @@ hr {
   ;
 }
 
-.trending-user1-pic,
-.trending-user2-pic,
-.trending-user3-pic {
-  width: 4rem;
+.trending-user-pic {
+  width: 3rem;
+  border-radius: 100px;
 }
 
 .trending-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  margin-right: 1rem;
 }
 
-.trending-user1-name,
-.trending-user2-name,
-.trending-user3-name {
+.trending-user-name {
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
 }
 
-.trending-user1-bio,
-.trending-user2-bio,
-.trending-user3-bio {
+.trending-user-bio {
   margin: 0;
   font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
