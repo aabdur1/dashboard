@@ -1,219 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="icon" href="images/icons/jellyfish-outline.svg" type="image/svg">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.typekit.net/cbm2tmy.css">
-</head>
-<body>
-  <div class="sidebar">
-    <div class="logo">
-      <img src="images/icons/paw-outline.svg" alt="Paw" class="logo-pic">
-      <h1 class="logo-title">Dashboard</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="icon"
+      href="images/icons/jellyfish-outline.svg"
+      type="image/svg"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/cbm2tmy.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="images/icons/paw-outline.svg" alt="Paw" class="logo-pic" />
+        <h1 class="logo-title">Dashboard</h1>
+      </div>
+      <div class="link-container">
+        <div class="home">
+          <img
+            src="images/icons/home-account.svg"
+            alt="Home"
+            class="home-pic"
+          />
+          <p class="home text">Home</p>
+        </div>
+        <div class="profile">
+          <img
+            src="images/icons/account.svg"
+            alt="Profile"
+            class="profile-pic"
+          />
+          <p class="profile text">Profile</p>
+        </div>
+        <div class="messages">
+          <img
+            src="images/icons/message-text.svg"
+            alt="Messages"
+            class="messages-pic"
+          />
+          <p class="messages text">Messages</p>
+        </div>
+        <div class="history">
+          <img
+            src="images/icons/history.svg"
+            alt="History"
+            class="history-pic"
+          />
+          <p class="history text">History</p>
+        </div>
+        <div class="tasks">
+          <img
+            src="images/icons/format-list-checkbox.svg"
+            alt="Tasks"
+            class="tasks-pic"
+          />
+          <p class="tasks text">Tasks</p>
+        </div>
+        <div class="communities">
+          <img
+            src="images/icons/account-group.svg"
+            alt="Communities"
+            class="communities-pic"
+          />
+          <p class="communities text">Communities</p>
+        </div>
+      </div>
+      <div class="other-links">
+        <div class="settings">
+          <img src="images/icons/cogs.svg" alt="Settings" class="setting-pic" />
+          <p class="settings text">Settings</p>
+        </div>
+        <div class="support">
+          <img
+            src="images/icons/lifebuoy.svg"
+            alt="Support"
+            class="support-pic"
+          />
+          <p class="support text">Support</p>
+        </div>
+        <div class="privacy">
+          <img src="images/icons/lock.svg" alt="Privacy" class="privacy-pic" />
+          <p class="privacy text">Privacy</p>
+        </div>
+      </div>
+      <div class="github">
+        <img
+          src="images/icons/logo-github.svg"
+          alt="github logo"
+          class="github-logo"
+        />
+        <a href="https://github.com/aabdur1" class="github-username"
+          >github.com/aabdur1</a
+        >
+      </div>
     </div>
-    <div class="link-container">
-      <div class="home">
-        <img src="images/icons/home-account.svg" alt="Home" class="home-pic">
-        <p class="home text">Home</p>
-      </div>
-      <div class="profile">
-        <img src="images/icons/account.svg" alt="Profile" class="profile-pic">
-        <p class="profile text">Profile</p>
-      </div>
-      <div class="messages">
-        <img src="images/icons/message-text.svg" alt="Messages" class="messages-pic">
-        <p class="messages text">Messages</p>
-      </div>
-      <div class="history">
-        <img src="images/icons/history.svg" alt="History" class="history-pic">
-        <p class="history text">History</p>
-      </div>
-      <div class="tasks">
-        <img src="images/icons/format-list-checkbox.svg" alt="Tasks" class="tasks-pic">
-        <p class="tasks text">Tasks</p>
-      </div>
-      <div class="communities">
-        <img src="images/icons/account-group.svg" alt="Communities" class="communities-pic">
-        <p class="communities text">Communities</p>
-      </div>
-    </div>
-    <div class="other-links">
-      <div class="settings">
-        <img src="images/icons/cogs.svg" alt="Settings" class="setting-pic">
-        <p class="settings text">Settings</p>
-      </div>
-      <div class="support">
-        <img src="images/icons/lifebuoy.svg" alt="Support" class="support-pic">
-        <p class="support text">Support</p>
-      </div>
-      <div class="privacy">
-        <img src="images/icons/lock.svg" alt="Privacy" class="privacy-pic">
-        <p class="privacy text">Privacy</p>
-      </div>
-    </div>
-    <div class="github">
-      <img src="images/icons/logo-github.svg" alt="github logo" class="github-logo">
-      <a href="https://github.com/aabdur1" class="github-username">github.com/aabdur1</a>
-    </div>
-  </div>
-  <div class="content-wrapper">
-    <header class="header">
-      <div class="search">
-        <img src="images/icons/magnify.svg" alt="Search" class="search-icon">
-        <input type="search" name="search" id="search" class="search-bar" placeholder="Search for ideas...">
-      </div>
-      <div class="icons">
-        <img src="images/icons/bell-outline.svg" alt="Notifications" class="icon-notification">
-        <img src="images/Mealtime_Original.png" alt="Pablo profile pic" class="icon-profile-pic">
-        <div class="icon-name">Pablo the Cat</div>
-      </div>
-      <div class="greeting">
-        <img src="images/Mealtime_Original.png" alt="Pablo profile pic" class="greeting-profile-pic">
-        <div class="greeting-greeting">
-          <p class="greeting-text">Hi there,</p>
-          <p class="greeting-username">Pablo @orangeboi</p>
+    <div class="content-wrapper">
+      <header class="header">
+        <div class="search">
+          <img
+            src="images/icons/magnify.svg"
+            alt="Search"
+            class="search-icon"
+          />
+          <input
+            type="search"
+            name="search"
+            id="search"
+            class="search-bar"
+            placeholder="Search for ideas..."
+          />
         </div>
-      </div>
-      <div class="header-btns">
-        <button class="header-btns-new">New</button>
-        <button class="header-btns-upload">Upload</button>
-        <button class="header-btns-share">Share</button>
-      </div>
-    </header>
-    <main class="main">
-      <h2 class="main-header">Your Projects</h2>
-      <div class="card">
-        <h2 class="card-header">Pablo's Picnic Predicament</h2>
-        <div class="card-content" onclick="toggleCardContent(this)">
-          Amir decided to have a peaceful picnic in the backyard, but Pablo had other plans. As soon as Amir laid out the blanket, Pablo pounced onto it, sending sandwiches flying. Determined to salvage the picnic, Amir attempted to shoo Pablo away, only for Pablo to retaliate by batting at the fruit salad. The picnic turned into a hilarious battle of wits, with Amir ultimately surrendering the blanket to Pablo's reign of chaos.
+        <div class="icons">
+          <img
+            src="images/icons/bell-outline.svg"
+            alt="Notifications"
+            class="icon-notification"
+          />
+          <img
+            src="images/Mealtime_Original.png"
+            alt="Pablo profile pic"
+            class="icon-profile-pic"
+          />
+          <button class="laserPointerToggle">🔴</button>
+          <div class="icon-name">Pablo the Cat</div>
         </div>
-        <div class="card-icons">
-          <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/file-edit-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/share-variant-outline.svg" alt="Add to favorites" class="card-icon">
-        </div>
-      </div>
-      <div class="card">
-        <h2 class="card-header">Pablo's Parcel Prank</h2>
-        <div class="card-content" onclick="toggleCardContent(this)">
-          Amir received a package in the mail and left it unattended for a moment. Sensing an opportunity for mischief, Pablo decided to investigate. With a swift paw, he tore into the box, only to find it filled with packing peanuts. Unfazed, Pablo proceeded to scatter the peanuts across the room, turning the living room into a winter wonderland of packaging material.        </div>
-        <div class="card-icons">
-          <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/file-edit-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/share-variant-outline.svg" alt="Add to favorites" class="card-icon">
-        </div>
-      </div>
-      <div class="card">
-        <h2 class="card-header">Pablo's Piano Performance</h2>
-        <div class="card-content" onclick="toggleCardContent(this)">
-          Amir decided to practice his piano skills one lazy Sunday afternoon. However, every time he hit a wrong note, Pablo would let out a dramatic meow, clearly unimpressed by his human's musical talents. Undeterred, Amir continued playing, turning the impromptu duet into a hilarious cacophony of keys and meows. It was a performance that would surely go down in the annals of feline history.        
-        </div>
-        <div class="card-icons">
-          <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/file-edit-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/share-variant-outline.svg" alt="Add to favorites" class="card-icon">
-        </div>
-      </div>
-      <div class="card">
-        <h2 class="card-header">Pablo's Party Planner Prowess</h2>
-        <div class="card-content" onclick="toggleCardContent(this)">
-          Amir decided to host a dinner party for his friends, but he quickly realized he had a secret party planner in the form of Pablo. As soon as the guests arrived, Pablo took it upon himself to be the center of attention, weaving between legs and charming everyone with his antics. From stealing appetizers to commandeering laps, Pablo ensured that the evening was filled with laughter and chaos, leaving Amir to wonder if he should start charging admission for Pablo's entertainment services.        </div>
-        <div class="card-icons">
-            <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
-            <img src="images/icons/file-edit-outline.svg" alt="Add to favorites" class="card-icon">
-            <img src="images/icons/share-variant-outline.svg" alt="Add to favorites" class="card-icon">
+        <div class="greeting">
+          <img
+            src="images/Mealtime_Original.png"
+            alt="Pablo profile pic"
+            class="greeting-profile-pic"
+          />
+          <div class="greeting-greeting">
+            <p class="greeting-text">Hi there,</p>
+            <p class="greeting-username">Pablo @orangeboi</p>
           </div>
+        </div>
+        <div class="header-btns">
+          <button class="header-btns-new">New</button>
+          <button class="header-btns-upload">Upload</button>
+          <button class="header-btns-share">Share</button>
+        </div>
+      </header>
+      <main class="main">
+        <h2 class="main-header">Your Projects</h2>
+        <div class="card">
+          <h2 class="card-header">Pablo's Picnic Predicament</h2>
+          <div class="card-content" onclick="toggleCardContent(this)">
+            Amir decided to have a peaceful picnic in the backyard, but Pablo
+            had other plans. As soon as Amir laid out the blanket, Pablo pounced
+            onto it, sending sandwiches flying. Determined to salvage the
+            picnic, Amir attempted to shoo Pablo away, only for Pablo to
+            retaliate by batting at the fruit salad. The picnic turned into a
+            hilarious battle of wits, with Amir ultimately surrendering the
+            blanket to Pablo's reign of chaos.
+          </div>
+          <div class="card-icons">
+            <img
+              src="images/icons/star-plus-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/file-edit-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/share-variant-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-header">Pablo's Parcel Prank</h2>
+          <div class="card-content" onclick="toggleCardContent(this)">
+            Amir received a package in the mail and left it unattended for a
+            moment. Sensing an opportunity for mischief, Pablo decided to
+            investigate. With a swift paw, he tore into the box, only to find it
+            filled with packing peanuts. Unfazed, Pablo proceeded to scatter the
+            peanuts across the room, turning the living room into a winter
+            wonderland of packaging material.
+          </div>
+          <div class="card-icons">
+            <img
+              src="images/icons/star-plus-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/file-edit-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/share-variant-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-header">Pablo's Piano Performance</h2>
+          <div class="card-content" onclick="toggleCardContent(this)">
+            Amir decided to practice his piano skills one lazy Sunday afternoon.
+            However, every time he hit a wrong note, Pablo would let out a
+            dramatic meow, clearly unimpressed by his human's musical talents.
+            Undeterred, Amir continued playing, turning the impromptu duet into
+            a hilarious cacophony of keys and meows. It was a performance that
+            would surely go down in the annals of feline history.
+          </div>
+          <div class="card-icons">
+            <img
+              src="images/icons/star-plus-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/file-edit-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/share-variant-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-header">Pablo's Party Planner Prowess</h2>
+          <div class="card-content" onclick="toggleCardContent(this)">
+            Amir decided to host a dinner party for his friends, but he quickly
+            realized he had a secret party planner in the form of Pablo. As soon
+            as the guests arrived, Pablo took it upon himself to be the center
+            of attention, weaving between legs and charming everyone with his
+            antics. From stealing appetizers to commandeering laps, Pablo
+            ensured that the evening was filled with laughter and chaos, leaving
+            Amir to wonder if he should start charging admission for Pablo's
+            entertainment services.
+          </div>
+          <div class="card-icons">
+            <img
+              src="images/icons/star-plus-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/file-edit-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/share-variant-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-header">Pablo's Pasta Party</h2>
+          <div class="card-content" onclick="toggleCardContent(this)">
+            Amir attempted to cook a gourmet Italian meal, complete with
+            handmade pasta. However, Pablo had different culinary aspirations.
+            Intrigued by the aroma of fresh dough, Pablo leaped onto the kitchen
+            counter and began batting at the strands of pasta, sending flour
+            flying in every direction. What started as an elegant dinner
+            preparation turned into a messy pasta party, with Pablo at the helm
+            as the self-proclaimed pasta chef.
+          </div>
+          <div class="card-icons">
+            <img
+              src="images/icons/star-plus-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/file-edit-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/share-variant-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-header">Pablo's Photobomb Frenzy</h2>
+          <div class="card-content" onclick="toggleCardContent(this)">
+            Amir decided to take some professional headshots for his LinkedIn
+            profile. However, every time he set up the camera, Pablo would
+            photobomb the shot with impeccable timing. Whether it was a playful
+            swipe at the camera or a mischievous photobomb from behind a plant,
+            Pablo made sure to leave his mark on every photo. In the end, Amir's
+            professional headshots had an unexpected touch of feline flair,
+            courtesy of Pablo's relentless photobombing antics.
+          </div>
+          <div class="card-icons">
+            <img
+              src="images/icons/star-plus-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/file-edit-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+            <img
+              src="images/icons/share-variant-outline.svg"
+              alt="Add to favorites"
+              class="card-icon"
+            />
+          </div>
+        </div>
+        <img
+          src="images/the_creation_of_pablo.jpg"
+          alt="The creation of Pablo"
+          class="main-img"
+        />
+      </main>
+      <div class="announcements">
+        <h2 class="announcements-header">Announcements</h2>
+        <div class="announcements-card">
+          <div class="announcements-card1">
+            <h3 class="announcements-card-title1">Pablo's Birthday Bash!</h3>
+            <p class="announcements-card-text1">
+              Join us in celebrating Pablo's special day! Our beloved orange
+              furball is turning another year wiser (or perhaps just more
+              mischievous). There will be treats, toys, and plenty of catnip for
+              everyone. Don't miss out on the purr-fect party of the year!
+            </p>
+          </div>
+          <hr />
+          <div class="announcements-card2">
+            <h3 class="announcements-card-title2">
+              Meet Pablo the Therapy Cat!
+            </h3>
+            <p class="announcements-card-text2">
+              Need a furry friend to brighten your day? Look no further than
+              Pablo! Our certified therapy cat will be making rounds to spread
+              joy and cuddles to all who need it. Stop by and say hello to our
+              fluffy ambassador of happiness!
+            </p>
+          </div>
+          <hr />
+          <div class="announcements-card3">
+            <h3 class="announcements-card-title3">Pablo's Paint Party!</h3>
+            <p class="announcements-card-text3">
+              Get ready to unleash your inner artist with Pablo! Join us for an
+              afternoon of painting and pawsitivity as Pablo leads a guided
+              paint session for humans and their furry companions. No experience
+              necessary – just bring your creativity and prepare to unleash your
+              inner Picasso alongside our favorite feline muse!
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h2 class="card-header">Pablo's Pasta Party</h2>
-        <div class="card-content" onclick="toggleCardContent(this)">
-          Amir attempted to cook a gourmet Italian meal, complete with handmade pasta. However, Pablo had different culinary aspirations. Intrigued by the aroma of fresh dough, Pablo leaped onto the kitchen counter and began batting at the strands of pasta, sending flour flying in every direction. What started as an elegant dinner preparation turned into a messy pasta party, with Pablo at the helm as the self-proclaimed pasta chef.        
+      <div class="trending">
+        <h2 class="trending-header">Trending</h2>
+        <div class="trending-user">
+          <img
+            src="images/cat-in-space.webp"
+            alt="Pablo profile pic"
+            class="trending-user-pic"
+          />
+          <div class="trending-text-container">
+            <p class="trending-user-name">@niplover</p>
+            <p class="trending-user-bio">
+              Attention all catnip enthusiasts! 🌿 Just restocked my stash and
+              it's time to paw-ty! Who's in for a catnip fiesta? #CatnipFrenzy
+              #PartyLikeAPurrStar #PabloThePartyCat
+            </p>
+          </div>
         </div>
-        <div class="card-icons">
-          <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/file-edit-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/share-variant-outline.svg" alt="Add to favorites" class="card-icon">
+        <div class="trending-user">
+          <img
+            src="images/DALL·E 2024-02-26 03.25.43 - In a dynamic and humorous profile photo, an orange cat named Pablo is captured mid-leap, his fur fluffed up in excitement. His eyes are wide with anti.webp"
+            alt="Pablo profile pic"
+            class="trending-user-pic"
+          />
+          <div class="trending-text-container">
+            <p class="trending-user-name">@1orangebraincell</p>
+            <p class="trending-user-bio">
+              Decided to conduct a scientific experiment today: How many hours
+              of sleep is too many? The results so far: inconclusive. 😴🔬
+              #SleepResearch #NappingExpert #PabloTheSleepyScientist
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <h2 class="card-header">Pablo's Photobomb Frenzy</h2>
-        <div class="card-content" onclick="toggleCardContent(this)">
-          Amir decided to take some professional headshots for his LinkedIn profile. However, every time he set up the camera, Pablo would photobomb the shot with impeccable timing. Whether it was a playful swipe at the camera or a mischievous photobomb from behind a plant, Pablo made sure to leave his mark on every photo. In the end, Amir's professional headshots had an unexpected touch of feline flair, courtesy of Pablo's relentless photobombing antics.        
+        <div class="trending-user">
+          <img
+            src="images/DALL·E 2024-02-26 03.28.38 - A charming scene featuring an orange cat sitting at a small table, elegantly holding a tiny cup of tea with its paw. The cat is wearing a small, sophi.webp"
+            alt="Pablo profile pic"
+            class="trending-user-pic"
+          />
+          <div class="trending-text-container">
+            <p class="trending-user-name">@mouser1</p>
+            <p class="trending-user-bio">
+              Just helped my human with their work by sitting on the keyboard.
+              You're welcome for the extra 'purr-sonal' touch! 😸💻
+              #WorkingFromHome #PabloTheAssistant
+            </p>
+          </div>
         </div>
-        <div class="card-icons">
-          <img src="images/icons/star-plus-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/file-edit-outline.svg" alt="Add to favorites" class="card-icon">
-          <img src="images/icons/share-variant-outline.svg" alt="Add to favorites" class="card-icon">
+        <div class="trending-user">
+          <img
+            src="images/beach-cat.webp"
+            alt="Pablo profile pic"
+            class="trending-user-pic"
+          />
+          <div class="trending-text-container">
+            <p class="trending-user-name">@cattv</p>
+            <p class="trending-user-bio">
+              Currently in negotiations with the birds outside. I offered them
+              peace in exchange for entertainment. They seem hesitant. 🐦🕊️
+              #BirdDiplomacy #PabloTheNegotiator
+            </p>
+          </div>
         </div>
-      </div>
-      <img src="images/the_creation_of_pablo.jpg" alt="The creation of Pablo" class="main-img">
-    </main>
-    <div class="announcements">
-      <h2 class="announcements-header">Announcements</h2>
-      <div class="announcements-card">
-        <div class="announcements-card1">
-          <h3 class="announcements-card-title1">Pablo's Birthday Bash!</h3>
-          <p class="announcements-card-text1">Join us in celebrating Pablo's special day! Our beloved orange furball is turning another year wiser (or perhaps just more mischievous). There will be treats, toys, and plenty of catnip for everyone. Don't miss out on the purr-fect party of the year!</p>
-        </div>
-        <hr>
-        <div class="announcements-card2">
-          <h3 class="announcements-card-title2">Meet Pablo the Therapy Cat!</h3>
-          <p class="announcements-card-text2">Need a furry friend to brighten your day? Look no further than Pablo! Our certified therapy cat will be making rounds to spread joy and cuddles to all who need it. Stop by and say hello to our fluffy ambassador of happiness!</p>
-        </div>
-        <hr>
-        <div class="announcements-card3">
-          <h3 class="announcements-card-title3">Pablo's Paint Party!</h3>
-          <p class="announcements-card-text3">Get ready to unleash your inner artist with Pablo! Join us for an afternoon of painting and pawsitivity as Pablo leads a guided paint session for humans and their furry companions. No experience necessary – just bring your creativity and prepare to unleash your inner Picasso alongside our favorite feline muse!</p>
+        <div class="trending-user">
+          <img
+            src="images/icons/angry-cat.webp"
+            alt="Pablo profile pic"
+            class="trending-user-pic"
+          />
+          <div class="trending-text-container">
+            <p class="trending-user-name">@spicyhugs</p>
+            <p class="trending-user-bio">
+              Came, saw, conquered... the treat jar! Victory tastes delicious.
+              🍪😸 #TreatTime #PabloTheConnoisseur
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="trending">
-      <h2 class="trending-header">Trending</h2>
-      <div class="trending-user">
-        <img src="images/cat-in-space.webp" alt="Pablo profile pic" class="trending-user-pic">
-        <div class="trending-text-container">
-          <p class="trending-user-name">@niplover</p>
-          <p class="trending-user-bio">Attention all catnip enthusiasts! 🌿 Just restocked my stash and it's time to paw-ty! Who's in for a catnip fiesta? #CatnipFrenzy #PartyLikeAPurrStar #PabloThePartyCat</p>
-        </div>
-      </div>
-      <div class="trending-user">
-        <img src="images/DALL·E 2024-02-26 03.25.43 - In a dynamic and humorous profile photo, an orange cat named Pablo is captured mid-leap, his fur fluffed up in excitement. His eyes are wide with anti.webp" alt="Pablo profile pic" class="trending-user-pic">
-        <div class="trending-text-container">
-          <p class="trending-user-name">@1orangebraincell</p>
-          <p class="trending-user-bio">Decided to conduct a scientific experiment today: How many hours of sleep is too many? The results so far: inconclusive. 😴🔬 #SleepResearch #NappingExpert #PabloTheSleepyScientist</p>
-        </div>
-      </div>
-      <div class="trending-user">
-        <img src="images/DALL·E 2024-02-26 03.28.38 - A charming scene featuring an orange cat sitting at a small table, elegantly holding a tiny cup of tea with its paw. The cat is wearing a small, sophi.webp" alt="Pablo profile pic" class="trending-user-pic">
-        <div class="trending-text-container">
-          <p class="trending-user-name">@mouser1</p>
-          <p class="trending-user-bio">Just helped my human with their work by sitting on the keyboard. You're welcome for the extra 'purr-sonal' touch! 😸💻 #WorkingFromHome #PabloTheAssistant</p>
-        </div>
-      </div>
-      <div class="trending-user">
-        <img src="images/beach-cat.webp" alt="Pablo profile pic" class="trending-user-pic">
-        <div class="trending-text-container">
-          <p class="trending-user-name">@cattv</p>
-          <p class="trending-user-bio">Currently in negotiations with the birds outside. I offered them peace in exchange for entertainment. They seem hesitant. 🐦🕊️ #BirdDiplomacy #PabloTheNegotiator</p>
-        </div>
-      </div>
-      <div class="trending-user">
-        <img src="images/icons/angry-cat.webp" alt="Pablo profile pic" class="trending-user-pic">
-        <div class="trending-text-container">
-          <p class="trending-user-name">@spicyhugs</p>
-          <p class="trending-user-bio">Came, saw, conquered... the treat jar! Victory tastes delicious. 🍪😸 #TreatTime #PabloTheConnoisseur</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script>
-    function toggleCardContent(element) {
-      element.classList.toggle('expanded')
-    }
-  </script>
-</body>
+    <script>
+      function toggleCardContent(element) {
+        element.classList.toggle("expanded");
+      }
+
+      document
+        .querySelector(".laserPointerToggle")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("laser-pointer-active");
+        });
+    </script>
+  </body>
 </html>

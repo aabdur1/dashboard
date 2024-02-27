@@ -27,14 +27,19 @@ body {
   background-color: #f97316;
   border-top: none;
   border-radius: 0 0 10px 10px;
-  margin: 0 1rem 1rem;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  margin: 0 1rem 1.5rem;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
+}
+
+.logo:hover {
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.laser-pointer-active .logo:hover {
+  cursor: url(images/cursors/laser-pointer.png), auto;
 }
 
 .logo-pic {
@@ -65,11 +70,14 @@ body {
   font-size: 1.2rem;
   gap: 1rem;
   padding-left: 5%;
-  cursor: pointer;
 }
 
 .text:hover {
   transform: translateX(5%);
+}
+
+.laser-pointer-active .text:hover {
+  cursor: url(images/cursors/laser-pointer.png), auto;
 }
 
 .link-container img,
@@ -125,13 +133,9 @@ a.github-username {
   padding-right: 0;
   gap: 1rem;
   margin: 0;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 .search {
@@ -167,17 +171,36 @@ a.github-username {
   gap: 1rem;
 }
 
+.laserPointerToggle {
+  background-color: transparent;
+  border: none;
+  border-radius: 100px;
+}
+
+.laserPointerToggle:hover {
+  box-shadow: none;
+}
+
+.laser-pointer-active {
+  cursor: url(images/cursors/laser.png), auto;
+}
+
+.laser-pointer-active .icon-notification:hover,
+.laser-pointer-active .icon-profile-pic:hover,
+.laser-pointer-active .icon-name:hover {
+  cursor: url(images/cursors/laser-pointer.png), auto;
+}
+
 .icon-notification:hover,
-.icon-name:hover,
 .icon-profile-pic:hover {
   transform: translateY(4%);
-  cursor: pointer;
-  box-shadow: 
-  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 12px 12px hsl(117deg 0% 0% / 0.33)
-  ;
+  box-shadow: 0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 12px 12px hsl(117deg 0% 0% / 0.33);
+}
+
+.icon-name:hover {
+  padding-right: 1.5rem;
 }
 
 .icon-notification {
@@ -206,13 +229,9 @@ a.github-username {
   background-color: #f97316;
   border-radius: 10px 0 0 10px;
   border-right: none;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 .greeting {
@@ -263,23 +282,20 @@ p.greeting-username {
   background-color: #fdba74;
   color: #c2410c;
   cursor: pointer;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 button:hover {
   transform: translateY(4%);
-  box-shadow: 
-  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 12px 12px hsl(117deg 0% 0% / 0.33)
-  ;
+  box-shadow: 0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 12px 12px hsl(117deg 0% 0% / 0.33);
+}
+
+.laser-pointer-active button:hover {
+  cursor: url(images/cursors/laser-pointer.png), auto;
 }
 
 .main {
@@ -308,25 +324,22 @@ button:hover {
   border-left: 0.5rem solid #c2410c;
   padding: 1rem;
   margin: 2px;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 .card:hover {
   margin: 0;
   border: 2px solid #c2410c;
   border-left: 0.5rem solid #c2410c;
-  box-shadow: 
-  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 12px 12px hsl(117deg 0% 0% / 0.33)
-  ;
+  box-shadow: 0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 12px 12px hsl(117deg 0% 0% / 0.33);
+}
+
+.laser-pointer-active .card:hover {
+  cursor: url(images/cursors/laser-pointer.png), auto;
 }
 
 .card-content {
@@ -367,13 +380,9 @@ button:hover {
   width: 100%;
   border-radius: 10px;
   margin-top: 1rem;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 .announcements {
@@ -399,13 +408,9 @@ button:hover {
   background-color: #f97316;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 .announcements-card-text1,
@@ -432,7 +437,7 @@ hr {
   flex-direction: column;
   gap: 1rem;
   border-radius: 10px 10px 0 0;
-  height: 5rem;
+  margin-bottom: 2rem;
 }
 
 .trending-header {
@@ -450,13 +455,9 @@ hr {
   background-color: #fb923c;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 
-  0 1px 1px hsla(0, 0%, 0%, 0.075),
-  0 2px 2px hsl(117deg 0% 0% / 0.075),
-  0 4px 4px hsl(117deg 0% 0% / 0.075),
-  0 8px 8px hsl(117deg 0% 0% / 0.075),
-  0 16px 16px hsl(117deg 0% 0% / 0.075)
-  ;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
+    0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
+    0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
 .trending-user:hover {
@@ -464,6 +465,10 @@ hr {
   margin-inline: 14px;
   border: 2px solid #c2410c;
   cursor: pointer;
+}
+
+.laser-pointer-active .trending-user:hover {
+  cursor: url(images/cursors/laser-pointer.png), auto;
 }
 
 .trending-user-pic {
