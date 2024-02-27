@@ -440,6 +440,10 @@ button:hover {
     0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
 }
 
+.announcements-card-title {
+  color: #fed7aa;
+}
+
 .announcements-card-text1,
 .announcements-card-text2,
 .announcements-card-text3 {
