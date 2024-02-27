@@ -85,7 +85,27 @@ body {
 
 .other-links {
   position: sticky;
-  top: 70%;
+  top: 65%;
+}
+
+.github {
+  display: flex;
+  position: sticky;
+  top: 110%;
+  gap: 0.5rem;
+  justify-content: stretch;
+  align-items: center;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.github-logo {
+  width: 2rem;
+}
+
+a.github-username {
+  color: #fed7aa;
+  text-decoration: none;
 }
 
 .content-wrapper {
@@ -422,6 +442,7 @@ hr {
 
 .trending-user {
   margin-inline: 1rem;
+  margin-block: 2px;
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -436,6 +457,13 @@ hr {
   0 8px 8px hsl(117deg 0% 0% / 0.075),
   0 16px 16px hsl(117deg 0% 0% / 0.075)
   ;
+}
+
+.trending-user:hover {
+  margin-block: 0;
+  margin-inline: 14px;
+  border: 2px solid #c2410c;
+  cursor: pointer;
 }
 
 .trending-user-pic {
