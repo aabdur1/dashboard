@@ -405,6 +405,11 @@ button:hover {
   box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.075),
     0 2px 2px hsl(117deg 0% 0% / 0.075), 0 4px 4px hsl(117deg 0% 0% / 0.075),
     0 8px 8px hsl(117deg 0% 0% / 0.075), 0 16px 16px hsl(117deg 0% 0% / 0.075);
+  cursor: pointer;
+}
+
+.laser-pointer-active .main-img:hover {
+  cursor: url(images/cursors/laser-pointer.png), auto;
 }
 
 .announcements {
